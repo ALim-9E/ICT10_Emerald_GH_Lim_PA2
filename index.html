@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- PyScript Integration -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    <!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Student Grade Calculator</title>
+</head>
+<body>
+
+<div class="container mt-5 mb-5">
+
+    <h1>Student Grade Calculator</h1><br>
+
+    <form>
+
+        <div class="row fname mb-3" > <!--div for email-->
+	        <label for="inputFirst" class="col-sm-1 col-form-label">First Name</label>
+	        <div class="col-sm-11">
+	        	<input type="text" class="form-control" id="fname" required>
+	    	</div>
+	    </div>
+
+	    <div class="row lname mb-3"> <!--div for password-->
+	        <label for="inputLast" class="col-sm-1 col-form-label">Last Name</label>
+	        <div class="col-sm-11">
+	        	<input type="text" class="form-control" id="lname" required>
+	    	</div>
+	    </div>
+
+        <div class="row science mb-3" > <!--div for email-->
+	        <label for="inputSci" class="col-sm-1 col-form-label">Science</label>
+	        <div class="col-sm-11">
+	        	<input type="number" class="form-control" id="science" required>
+	    	</div>
+	    </div>
+
+	    <div class="row english mb-3"> <!--div for password-->
+	        <label for="inputEng" class="col-sm-1 col-form-label">English</label>
+	        <div class="col-sm-11">
+	        	<input type="number" class="form-control" id="english" required>
+	    	</div>
+	    </div>
+
+        <div class="row math mb-3" > <!--div for email-->
+	        <label for="inputMath" class="col-sm-1 col-form-label">Math</label>
+	        <div class="col-sm-11">
+	        	<input type="number" class="form-control" id="math" required>
+	    	</div>
+	    </div>
+
+	    <div class="row filipino mb-3"> <!--div for password-->
+	        <label for="inputFil" class="col-sm-1 col-form-label">Filipino</label>
+	        <div class="col-sm-11">
+	        	<input type="number" class="form-control" id="filipino" required>
+	    	</div>
+	    </div>
+
+        <div class="row pe mb-3" > <!--div for email-->
+	        <label for="inputPE" class="col-sm-1 col-form-label">PE</label>
+	        <div class="col-sm-11">
+	        	<input type="number" class="form-control" id="pe" required>
+	    	</div>
+	    </div>
+
+	    <div class="row ict mb-3"> <!--div for password-->
+	        <label for="inputICT" class="col-sm-1 col-form-label">ICT</label>
+	        <div class="col-sm-11">
+	        	<input type="number" class="form-control" id="ict" required>
+	    	</div>
+	    </div>
+
+        <div class="row button">
+            <div class="offset-sm-0">
+                <input type="button" class="btn btn-danger" value="Calculate GWA" py-click="calculating_grade">
+            </div>
+        </div>
+
+        <br>
+
+    </form>
+
+	<div id="output"></div>
+
+</div>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
